@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow functions in javascript</title>
+</head>
+<body>
+    <div class="container">
+        this is arrow function tutorial.
+    </div>
+    <script>
+        // function greet(){
+        //     console.log("good morning");
+        // }
+
+        // <============= we can also done it using arrow function ================>
+        // <<<<<<<<<<<<===exp.1 ===>>>>>>>>>>>>>>>
+        // let greet = ()=> {
+        //     console.log("good morning");
+        // }
+
+        // let greet = ()=> console.log("good morning");                 // shortcut ka bhi shortcut
+        // greet();
+
+        // <<<<<<<<<<<=== exp.2 ===>>>>>>>>>>>>>>>>
+        // setTimeout(() => {
+        //     console.log("good morning");
+        // }, 5000);
+
+        // setTimeout(() => console.log("good morning"), 5000)              // shortcut ka bhi shortcut
+
+        // <<<<<<<<<<<=== exp.3 ===>>>>>>>>>>>>>>>>>
+        // let sum = (a, b) => {
+        //     return a+b;
+        // };
+        // c = sum(5, 4);
+        // console.log(c)
+
+        // let sum2 = (a, b) => a+b;                                        // shortcut ka bhi shortcut
+        // c = sum2(5, 4);
+        // console.log(c);
+
+        // let half = a => a/2;                                             // for singal argument we can also write it as follow
+        // console.log(half(43));
+
+
+        let obj1={
+            greeting: "good morning",
+            names: ['hari', 'mohit', 'vipul', 'golu', 'lala'],
+            speak(){
+                this.names.forEach((student)=>{
+                    console.log(this.greeting +" welcome " + student);
+                });
+            }
+        }
+        obj1.speak();
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript string functions</title>
+</head>
+<body>
+    
+    <script>
+        var str = "this is string"
+        console.log(str);
+
+        // first occurence of a substring
+        var position = str.indexOf('is');
+        console.log(position);
+
+        // last occurence of a substring
+        position = str.lastIndexOf('is');
+        console.log(position);
+
+        // substring from string
+        // var sub_str = str.slice(1, 6);                   // it can take negative values
+        // var sub_str = str.substring(1, 6);               // it works only with positive values
+        var sub_str = str.substr(1, 6);                     // extract values from 1 to 6
+        console.log(sub_str);
+
+        // var replaced = str.replace('string', 'hari');
+        // console.log(str);
+        // console.log(replaced);
+
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+        var newstring = str.concat(' new string');
+        console.log(newstring);
+
+        var strwithwhitespace = "      this contains        whitespaces      ";
+        console.log(strwithwhitespace);
+        console.log(strwithwhitespace.trim());              // this function will trim whitespaces from start and end 
+
+        var char_from_str = str.charAt(2);
+        console.log(char_from_str);
+        var char_from_str = str.charCodeAt(2);
+        console.log(char_from_str);                         // it will print utf-16 value of character...not very important
+
+        console.log(str[3]);
+    </script>
+</body>
+</html>
