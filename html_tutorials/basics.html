@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is description">
+    <meta name="keywords" content="html, web devlopment, html tutorial">
+    <meta name="robots" content="NOINDEX, NOFOLLOW">
+
+    <!-- this is how you include external css -->
+    <link rel="stylesheet" href="first.css">
+
+    <!-- this is how you include external javascript -->
+    <script src="first.js"></script>
+
+    <title>This is title</title>
+</head>
+<body>
+    <h1>hello world</h1>
+    <h2>hello world</h2>
+    <h3>hello world</h3>
+    <h4>hello world</h4>
+    <h5>hello world</h5>
+    <h6>hello world</h6>
+    <p>my name is harry. hello harry</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod dolorum illo repellendus, sit accusamus ex quos qui fugiat voluptatum,<strong>this is strong</strong> mollitia aliquid ad vel aut, error harum deleniti! Fugiat dolores tempora accusamus alias eius repellendus adipisci delectus beatae<em> this is italic</em> dolore quas doloremque quod reiciendis laborum rem laudantium necessitatibus ad culpa in, dolorem quam placeat maxime. Modi, <b>this is bold</b> odit quia dicta at ea? Accusantium odio, blanditiis eos dolor sint natus nobis! Ipsa, adipisci?.</p>
+    <p>this is <br>new line</p>
+
+    <!-- how to add links & external html file link -->
+    <a href="https://google.com">google</a><br>                         <!-- open in same tab -->
+    <a href="https://facebok.com">facebook</a><br>
+    <a href="https://twitter.com" target="_blank">twitter</a><br>       <!-- open in new tab(target="_blank") -->
+    <a href="https://linkedin.com" target="_blank">linkedin</a><br>
+    <a href="/second.html" target="_blank">second html</a><br>
+
+    <!-- this is how we add image -->
+    <img src="hari.jpg" alt="ERROR LOADING IMAGE"><br>                  <!-- alt="" is used to display message if image is not loaded -->
+    <img src="https://source.unsplash.com/random/400x240" alt="ERROR LOADING IMAGE"><br>
+    
+    <!-- how to create list -->
+    <h3>HTML lists</h3>
+    <ul type="square">                                                  <!-- type="disk","circle","square" -->
+        <li>this is first</li>
+            <ol>                                                        <!-- ordered list under unordered list -->
+                <li>another one</li>
+                <li>another second</li>
+                <li>another third</li>
+            </ol>
+        <li>this is second</li>
+        <li>this is third</li>
+    </ul>
+    <ol type="a">
+        <li>this is first</li>
+        <li>this is second</li>
+            <ul type="disk">
+                <li>another one</li>
+                <li>another second</li>
+                <li>another third</li>
+            </ul>
+        <li>this is third</li>
+    </ol>
+
+    <!-- how to create table -->
+    <h3>HTML table</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>roll no</th>
+                <th>cource</th>
+                <th>subject</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>hari</td>
+                <td>3340</td>
+                <td>b.com</td>
+                <td>income tax</td>
+            </tr>
+            <tr>
+                <td>mohit</td>
+                <td>3540</td>
+                <td>b.sc</td>
+                <td>biology</td>
+            </tr>
+            <tr>
+                <td>jack</td>
+                <td>4490</td>
+                <td>b.tech</td>
+                <td>statistics</td>
+            </tr>
+            <tr>
+                <td>muchi</td>
+                <td>3450</td>
+                <td>b.a</td>
+                <td>history</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- inline and block elements -->
+
+    <!-- inline element => ek inline puri line ko block n krkr keval utni hi width leta hi jitne necessary hoti hi.
+    exp. <a> <abbr > <acronym> <b> <bdo> <big> <br> <button> <cite> <code> <dfn> <em> <i> <img> <input> <kbd> <label> <map> <object> <output> <q> <samp> <script> <select> <small ><span ><strong> <sub> <sup> <textarea> <time> <tt> <var> -->
+
+    <!-- block element => ek block element hamesha new line se start hota hi or puri line ki width ko block krta hi.
+    exp. <address> <article> <aside> <blockquote> <canvas> <dd> <div> <dl> <dt> <fieldset> <figcaption> <figure> <footer> <form> <h1> <h6> <header> <hr> <li> <main> <nav> <noscript> <ol> <p> <pre> <section> <table> <tfoot> <ul> <video></video> -->
+    
+    <!-- ids and classes -->
+    <h3>ids and classes</h3>
+    <div id="mainbox" class="redbg">
+        this is mainbox
+    </div>
+
+    <!-- html entities -->
+    <h3>html entities</h3>
+    <div>
+        <p>this is another &nbsp; paragraph</p>
+        <p>paragraph is writen like this &lt;p&gt;</p>
+        <p>pound is writen like this &pound;</p>
+        <p>dollar is writen like this &dollar;</p>
+        <p>copyrite is writen like this &copy;</p>
+        <p>empty character is writen like this &#8203;</p>
+    </div>
+
+    <!-- HTML semantic elements
+        <article> <aside> <details> <figcaption> <figure> <footer> <main> <header> <mark> <nav> <section> <summary> <time> -->
+    <h3>HTML semantic elements</h3>
+        <details>
+            <summary>names</summary>
+            hari<br>
+            mohit<br>
+            jack<br>
+            viplove<br>
+            roney<br>
+        </details>
+
+</body>
+</html>
+<!-- ctr + enter to jump into new line -->
+<!-- alt + z to toggle word wrap -->
+<!-- alt + click to multiline typing -->
+<!-- alt + down to shift a line to downword -->
+
+<!-- emmets -->
+<!-- ! is for html boiler plate -->
+<!-- . is for class and # is for id,   exp => div.redbg,  div#redbg,  (here redbg is an class) -->
+<!-- * is for print more then one similar elements,    exp => div*4 -->

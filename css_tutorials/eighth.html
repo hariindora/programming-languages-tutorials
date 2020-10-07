@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css box model, margin and padding</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #e6cbf8;
+        }
+        .container{
+            background-color: rgb(231, 230, 241);
+            border: 3px solid rgb(64, 6, 119);
+            width: 544px;
+            border-radius: 23px;
+            box-sizing: border-box;
+            padding: 40px;
+            margin: 20px;
+
+            /* we can set margin/padding separately for top, bottom, left, right like this */
+            /* padding-top: 40px;
+            padding-bottom: 40px;
+            padding-left: 40px;
+            padding-right: 40px; */
+
+            /* shortcut to set margin/padding for top, bottom, left, right */
+            /* syntax=> padding/margin: top right bottom left; */
+            /* padding: 40px 40px 40px 40px;
+            margin: 20px 20px 20px 20px; */
+
+            /* another shortcut to set margin/padding for top, bottom, left, right. iska use tb krte h jb hme top and bottom ke padding/margin same ho or left and right ke same ho */
+            /* syntax=> padding/margin: y(top/bottom) x(left/right); */
+            /* padding: 40px 30px;
+            margin: 20px 15px; */
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>this is heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nihil, laboriosam aperiam alias sunt reiciendis totam ipsam nesciunt officiis atque odio delectus porro, rerum molestias consequatur minus perferendis fuga quam, nisi possimus. Unde ut quas natus vero perferendis nisi aliquam.</p>
+    </div>
+    <div class="container">
+        <h3>this is heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nihil, laboriosam aperiam alias sunt reiciendis totam ipsam nesciunt officiis atque odio delectus porro, rerum molestias consequatur minus perferendis fuga quam, nisi possimus. Unde ut quas natus vero perferendis nisi aliquam.</p>
+    </div>
+    <div class="container">
+        <h3>this is heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nihil, laboriosam aperiam alias sunt reiciendis totam ipsam nesciunt officiis atque odio delectus porro, rerum molestias consequatur minus perferendis fuga quam, nisi possimus. Unde ut quas natus vero perferendis nisi aliquam.</p>
+    </div>
+    <div class="container">
+        <h3>this is heading</h3>
+        <p id="fourth">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nihil, laboriosam aperiam alias sunt reiciendis totam ipsam nesciunt officiis atque odio delectus porro, rerum molestias consequatur minus perferendis fuga quam, nisi possimus. Unde ut quas natus vero perferendis nisi aliquam.</p>
+    </div>
+</body>
+</html>

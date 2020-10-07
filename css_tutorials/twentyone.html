@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadow and text shadow</title>
+    <style>
+        .container{
+            display: flex;
+
+        }
+        .card{
+            padding: 23px 12px;
+            margin: 23px 12px;
+            background-color: burlywood;
+            border: 2px solid red;            
+
+            /* box-shadow full syntax =>
+            box-shadow: inset  offset-x value  offset-y value  blur-raius value  spread-radius value  color; */
+            /* box-shadow: 10px 13px grey; */
+            /* box-shadow: -10px -13px grey; */
+            /* box-shadow: 7px 5px 10px grey; */
+            /* box-shadow: 7px 5px 10px 15px grey; */
+            box-shadow: inset 10px 13px gray;
+            /* box-shadow: 3px 5px gray, 6px 10px blue; */
+        }
+        .card h2{
+            /* text-shadow: 2px 2px white; */
+            /* text-shadow: -2px -2px white; */
+            text-shadow: 2px 2px 4px white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>this is c++ course</h2>
+            <p>I have started c++ course whis does not mean that we will stope this cource. we will continue this cource to completion. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id officiis a exercitationem voluptates expedita commodi numquam quisquam culpa facilis, nesciunt minima rem maiores aliquam quaerat modi porro eligendi amet sunt atque quod vitae magni! Odit sequi est quod cumque reprehenderit.</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>this is HTML course</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id officiis a exercitationem voluptates expedita commodi numquam quisquam culpa facilis, nesciunt minima rem maiores aliquam quaerat modi porro eligendi amet sunt atque quod vitae magni! Odit sequi est quod cumque reprehenderit.</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>this is javascript cource</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id officiis a exercitationem voluptates expedita commodi numquam quisquam culpa facilis, nesciunt minima rem maiores aliquam quaerat modi porro eligendi amet sunt atque quod vitae magni! Odit sequi est quod cumque reprehenderit.</p>
+        </div>
+    </div>
+</body>
+</html>
