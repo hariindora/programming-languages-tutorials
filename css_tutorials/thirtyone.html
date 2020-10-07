@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid + media queries</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+        }
+
+        .border-now {
+            border: 2px solid black;
+            padding: 10px 23px;
+            background-color: wheat;
+        }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 300px) {
+            body {
+                background-color: red;
+            }
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+            aside{
+                display: none;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width: 300px) and (max-width: 500px) {
+            body {
+                background-color: blue;
+            }
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+            aside{
+                display: none;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media (min-width: 500px) and (max-width: 800px) {
+            body {
+                background-color: yellow;
+            }
+
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+            span{
+                display: block;
+                text-align: center;
+           }
+        }
+
+        @media (min-width: 800px) {
+            body {
+                background-color: green;
+            }
+            span{
+                margin: 10px;
+                font-size: 15px;
+           }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="border-now">
+            <span>Home</span>
+            <span>About</span>
+            <span>Services</span>
+            <span>Contact Us</span>
+        </nav>
+
+        <section class="border-now">
+            <h2>Learn CSS in English</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, quidem nam! Sapiente voluptatum deleniti alias quasi nisi vel non, eum ea? Eum id soluta libero aliquid minima, modi, vel autem, harum praesentium quis commodi consectetur? Repudiandae asperiores dolorem tenetur fugit sunt, assumenda voluptatibus consequuntur quia officia debitis quod nesciunt. Accusantium pariatur nulla distinctio iste perspiciatis esse magnam aut perferendis earum id? Nihil explicabo numquam sequi eveniet odio adipisci alias, magnam quia. Facilis saepe cum veritatis itaque, odit ducimus exercitationem, minus accusamus illum sint debitis, esse nobis qui? Quis voluptatem molestiae quidem quos neque earum est error ex quo, corrupti modi a hic perspiciatis nemo inventore adipisci enim numquam laudantium quia maiores eaque nostrum! Accusantium dignissimos, quam dolor reiciendis et saepe nobis iure?</p>
+        </section>
+
+        <aside class="border-now">
+            <h1>More about us</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam unde, quae accusantium cumque quas laboriosam officiis provident totam dolor animi.</p>
+        </aside>
+        <footer class="border-now">Copyright Codewithhari 2020</footer>
+    </div> 
+</body>
+
+</html>

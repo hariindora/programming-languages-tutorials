@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selectors</title>
+    <!-- here we use internal css to demonstrate css selectors -->
+    <style>
+        /* element selector */
+        p{
+            border-color: yellow;
+            border-style: solid;
+        }
+
+        /* id selector */
+        #first{
+            color: white; background-color: black;
+        }
+   
+        /* class selector */
+        .bggray{
+            color: black; background-color: gray;
+        }
+
+        /* grouping selector */
+        #fourth, footer, span{
+            color: white; background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h3>css selectors</h3>
+    <p id="first">this is simple paragraph to demonstrate css selectors</p>
+    <p id="second" class="bggray">this is another simple paragraph to demonstrate css selectors</p>
+    <p id="third" class="bggray">this is another simple paragraph to demonstrate css selectors</p>
+    <div>
+        <p id="fourth">this is yet another simple paragraph inside div to demonstrate css selectors</p>
+    </div>
+    <span>this is span</span>
+    <footer>this is footer</footer>
+</body>
+</html>

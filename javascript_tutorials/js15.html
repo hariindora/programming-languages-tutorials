@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>math objects in javascript</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>this is math object tutorial</h1>
+    </div>
+    <script>
+        // printing the Math object
+        let m = Math;
+        console.log(m);
+
+        // printing the content from Math object
+        console.log("the value of math.E is ", Math.E)
+        console.log("the value of math.PI is ", Math.PI)
+        console.log("the value of math.LN2 is ", Math.LN2)
+        console.log("the value of math.SQRT1_2 is ", Math.SQRT1_2)
+        console.log("the value of math.LOG2E is ", Math.LOG2E)
+
+        // printing the functions from Math object
+        let a = 34.54534;
+        let b = 89;
+        console.log("the value of and b is ", a, b);
+        console.log("the value of and b rounded is ", Math.round(a),Math.round(b));
+
+        console.log("3 raised to the power of 2 is ", Math.pow(3, 2));
+        console.log("4 raised to the power of 3 is ", Math.pow(4, 3));
+        console.log("2 raised to the power of 4 is ", Math.pow(2, 4));
+
+        console.log("square root of 36 is ", Math.sqrt(36));
+        console.log("square root of 64 is ", Math.sqrt(64));
+        console.log("square root of 50 is ", Math.sqrt(50));
+
+        console.log("5.8 is rounded up to nearest integer is ", Math.ceil(5.8));
+        console.log("100.4 is rounded up to nearest integer is ", Math.ceil(100.4));
+        console.log("100.6 is rounded down to nearest integer is ", Math.floor(100.6));
+
+        console.log("absolute value of 5.66 is", Math.abs(5.66));
+        console.log("absolute value of -5.66 is", Math.abs(-5.66));
+
+        console.log("the value of sin(pi) is", Math.sin(Math.PI/2));
+        console.log("the value of tan(pi) is", Math.tan(Math.PI/2));
+        console.log("the value of cos(pi) is", Math.cos(Math.PI/2));
+
+        //min and max functions
+        console.log("minimum value of 4, 5, 6, is", Math.min(4, 5, 6));
+        console.log("minimum value of 4, 5, 6, is", Math.max(4, 5, 6));
+
+        //generating a random number
+        let r = Math.random();
+        console.log(r);
+
+        //random number b/w 1 and 100
+        let x = 1;
+        let y = 100;
+        let r1_100 =x + (y-x)*Math.random();
+        console.log(r1_100)
+        console.log(Math.round(r1_100))
+    </script>
+</body>
+
+</html>
